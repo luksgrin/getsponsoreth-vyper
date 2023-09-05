@@ -7,3 +7,6 @@
 [submodule "packages/foundry/lib/snekmate"]
 	path = packages/foundry/lib/snekmate
 	url = https://github.com/pcaversaccio/snekmate
+[submodule "packages/foundry/lib/sneksmith"]
+	path = packages/foundry/lib/sneksmith
+	url = https://github.com/luksgrin/sneksmith
