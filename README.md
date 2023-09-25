@@ -16,11 +16,11 @@ In another terminal, run
 
 ```bash
 cd packages/foundry && \
+python script/create_interfaces.py && \
 forge script script/Deploy.s.sol \
 --ffi --broadcast \
 --rpc-url http://localhost:8545 && \
 python script/fix_names_in_receipt.py && \
-python script/create_interfaces.py && \
 node script/generateTsAbis.js && \
 cd ../..
 ```

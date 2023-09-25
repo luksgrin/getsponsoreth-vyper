@@ -5,7 +5,7 @@ const contracts = {
       chainId: "31337",
       contracts: {
         YourContract: {
-          address: "0x923602FD33e8323F50d4EDE0A4459cc453d64c82",
+          address: "0xbd03F055Af7a2e4fB6c8e5A64bB98904C9F9d812",
           abi: [
             {
               inputs: [
@@ -147,7 +147,7 @@ const contracts = {
           ],
         },
         SponsoredPools: {
-          address: "0x31033Af7160bEE7e2f21adC90aD8ec35f9cF218d",
+          address: "0x292031c5A761FC6A9c21891Ba75C552ca924f0E8",
           abi: [
             {
               anonymous: false,
@@ -411,7 +411,7 @@ const contracts = {
           ],
         },
         GetSponsorETH: {
-          address: "0x437ff7344D386Ae73A1b3D45449f773cf284E4A4",
+          address: "0xf785462C0E68fA88c480e33b4dB0564e5bCddff5",
           abi: [
             {
               anonymous: false,
