@@ -23,6 +23,27 @@ const ScaffoldEthApp = ({ Component, pageProps }: AppProps) => {
   const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
+    // Initialize the database by making a POST request to the API route
+    async function initializeDatabase() {
+      try {
+        const response = await fetch('/api/initializeDatabase', {
+          method: 'POST',
+        });
+        if (response.ok) {
+          console.log('Database initialized successfully');
+        } else {
+          console.error('Error initializing database');
+        }
+      } catch (error) {
+        console.error('Error initializing database:', error);
+      }
+    }
+
+    // Invoke the database initialization only once when the app starts
+    initializeDatabase();
+  }, []);
+
+  useEffect(() => {
     if (price > 0) {
       setNativeCurrencyPrice(price);
     }

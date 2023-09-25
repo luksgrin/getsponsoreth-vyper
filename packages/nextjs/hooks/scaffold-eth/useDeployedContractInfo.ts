@@ -13,6 +13,7 @@ export const useDeployedContractInfo = <TContractName extends ContractName>(cont
   const deployedContract = contracts?.[scaffoldConfig.targetNetwork.id]?.[0]?.contracts?.[
     contractName as ContractName
   ] as Contract<TContractName>;
+  console.log("deployedContract", deployedContract);
   const [status, setStatus] = useState<ContractCodeStatus>(ContractCodeStatus.LOADING);
   const publicClient = usePublicClient({ chainId: scaffoldConfig.targetNetwork.id });
 
